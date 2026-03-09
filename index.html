@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dishant Shah - Resume</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 800px; margin: 0 auto; padding: 2rem; line-height: 1.5; color: #222; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+    .contact { font-size: 0.9rem; color: #444; margin-bottom: 1.5rem; }
+    h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #ccc; margin-top: 1.5rem; padding-bottom: 0.25rem; }
+    ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+    .dates { font-style: italic; color: #555; }
+    .item { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Dishant Shah</h1>
+  <div class="contact">
+    San Jose, CA | dshah9542@gmail.com | 256-604-9611<br>
+    LinkedIn: linkedin.com/in/dishantk-shah | GitHub: github.com/Dishant-Shah-Projects
+  </div>
+
+  <p>Software engineer with 4+ years building and scaling enterprise SaaS systems at Intapp, with a focus on backend services and cloud infrastructure. Led a full AWS-to-Azure migration consolidating 30 microservices onto AKS, delivered performance improvements reducing API latency by up to 97%, and owned the full DevOps lifecycle from Jenkins pipelines to Argo CD and Helm. Currently building agentic development tooling for sustained AI-assisted engineering workflows.</p>
+
+  <h2>Experience</h2>
+  <div class="item">
+    <strong>Software Engineer, Intapp</strong> — Palo Alto, CA<br>
+    <span class="dates">August 2021 - Present</span> | Cloud-based SaaS platform for professional services firms (legal, accounting, finance)
+    <ul>
+      <li>Engineered backend services across three domains within the consolidated mini-monolith architecture: data processing pipelines, frontend-facing APIs, and system management — serving as the core application layer in both AWS and Azure environments.</li>
+      <li>Led migration from AWS microservices to Azure AKS, consolidating 30 microservices into 3 mini-monolith Docker images — reducing operational overhead and network latency across service boundaries.</li>
+      <li>Implemented a caching layer for mostly-static data, reducing API response times from ~2 minutes to ~3 seconds (~97% improvement) by eliminating redundant database round trips.</li>
+      <li>Proposed and executed architecture refinements to eliminate unnecessary network hops between services, reducing end-to-end update times from 30 seconds–several minutes to under 2 seconds.</li>
+      <li>Refactored database schema to remove redundant tables and simplify complex queries, improving query performance and long-term maintainability.</li>
+      <li>Designed and built an SMTP email delivery server from scratch using Node.js, enabling transactional and notification email workflows within the product.</li>
+      <li>Maintained, debugged, and enhanced data delivery pipelines surfacing backend data to frontend consumers — migrating from real-time Kafka in AWS to batch polling in Azure to reduce operational complexity.</li>
+      <li>Built monitoring dashboards in Grafana/Prometheus and automated test suites to ensure observability and reliability during and after the cloud migration.</li>
+      <li>Managed cloud infrastructure across AWS (Lambda, CloudFormation, Terraform) and Azure (AKS, Argo CD, Helm charts) via Jenkins CI/CD pipelines.</li>
+      <li>Designed and built CI/CD pipelines for PySpark data applications migrated from Databricks to AKS, enabling automated testing and deployment of data workflows.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <strong>Junior Software Engineer Intern, Intapp</strong> — San Jose, CA<br>
+    <span class="dates">June 2021 - August 2021</span> | Internship converted to full-time offer.
+  </div>
+  <div class="item">
+    <strong>Student Researcher / Researcher I, Biomedical Engineering, UAB</strong><br>
+    <span class="dates">January 2015 - August 2019</span><br>
+    Published 3 peer-reviewed papers and presented at 3 national conferences on NO-releasing nanomatrix gel research for dental regeneration and islet transplantation.
+  </div>
+
+  <h2>Projects</h2>
+  <div class="item">
+    <strong>Agentic Development Platform</strong><br>
+    <span class="dates">2025</span> | Python, FastAPI, Docker, SQLite, GitHub API, Claude Code, MCP, Bash<br>
+    Designed and deployed a self-hosted agentic development platform with two components: a language-agnostic scaffold defining a 9-stage structured workflow with 10 agent profiles and 11 reusable skills; and an autonomous runner server that polls GitHub issues, spawns Docker containers executing Claude Code agents, and manages 3 concurrent workers on a Proxmox VM.
+  </div>
+  <div class="item">
+    <strong>Algorithmic Trading Bot</strong><br>
+    <span class="dates">2025 — In progress</span> | Python, alpaca-py, systemd<br>
+    Personal-scale project built entirely using the Agentic Development Platform above. A long-only algorithmic trading system with a multi-symbol backtesting engine, SMA(50/200) trend strategy, ATR-based risk sizing, and portfolio heat enforcement. Features walk-forward validation, health/readiness HTTP endpoints, JSON logging with webhook alerts, and systemd deployment.
+  </div>
+  <div class="item">
+    <strong>FlavorNation</strong><br>
+    <span class="dates">2024 - 2025</span> | Go, Gin, Next.js 15, React 19, TypeScript, Tailwind CSS, MongoDB, Docker<br>
+    Built a full-stack restaurant discovery platform for Diners, Drive-Ins and Dives, including a custom scraper to collect all episodes and restaurants, a Go/Gin REST backend with MongoDB, and a Next.js 15 + React 19 frontend. Deployed via Docker on a self-hosted Proxmox VM with Docker Compose and health check endpoints.
+  </div>
+  <div class="item">
+    <strong>Discord Social Credit Bot</strong><br>
+    <span class="dates">2024 - 2025</span> | TypeScript, Node.js, Discord.js v14, Sequelize, SQLite, Vitest, Docker<br>
+    Designed and deployed a production Discord bot implementing a social credit system with emoji-based reward/penalty mechanics and leaderboards. Built with repository pattern, structured logging via Pino, type-safe command framework, database migrations, and comprehensive test coverage. Deployed on Proxmox via Docker.
+  </div>
+  <div class="item">
+    <strong>Graduate Academic Projects</strong> — San Jose State University<br>
+    <span class="dates">2020 - 2021</span> | Node.js, React.js, Express.js, MongoDB, MySQL, Redis, Kafka, GraphQL<br>
+    Built full-stack MERN prototypes (Glassdoor, Yelp) with Redis caching (~95% latency reduction), Kafka-backed API queues, AWS load balancing (configured for 10K concurrent users), and JWT authentication.
+  </div>
+
+  <h2>Skills</h2>
+  <p><strong>Languages:</strong> JavaScript, TypeScript, Python, Go, Java, C#</p>
+  <p><strong>Backend:</strong> Node.js, Express.js, .NET, Gin, RESTful APIs, GraphQL, Microservices, PySpark</p>
+  <p><strong>Frontend / Mobile:</strong> React.js, Next.js, React Native, Redux, HTML, CSS</p>
+  <p><strong>Databases:</strong> PostgreSQL, DynamoDB, MongoDB, MySQL, Redis, SQLite</p>
+  <p><strong>Cloud &amp; Infrastructure:</strong> Azure (AKS, Key Vault, Blob Storage), AWS (S3, DynamoDB, SQS, Lambda), Docker, Kubernetes, Kafka, Databricks</p>
+  <p><strong>DevOps &amp; Observability:</strong> Jenkins, Argo CD, Helm, Terraform, CloudFormation, Grafana, Prometheus, Git</p>
+  <p><strong>ML / Data:</strong> SK-Learn, NumPy, Pandas, Keras, TensorFlow, NLTK</p>
+  <p><strong>AI Tooling:</strong> Claude Code, MCP, Agentic Scaffolding, Multi-agent Orchestration, Prompt Engineering</p>
+  <p><strong>Practices:</strong> TDD, Agile, Event-Driven Architecture, Repository Pattern, Domain-Driven Design</p>
+
+  <h2>Education</h2>
+  <div class="item">
+    <strong>San Jose State University</strong>, San Jose, CA<br>
+    Master of Science in Software Engineering — May 2022
+  </div>
+  <div class="item">
+    <strong>University of Alabama at Birmingham</strong>, Birmingham, AL<br>
+    Bachelor of Sciences in Biomedical Engineering, Minor: Computer Science, Chemistry — August 2018<br>
+    Presidential Scholarship, Dean's List, Honors College, BMES Travel Award, 1st Place Fall Undergraduate Research Expo<br>
+    <span class="dates">Published 3 peer-reviewed papers (Journal of Clinical Medicine 2020, ACS Biomaterials 2017, Nano Convergence 2016)</span>
+  </div>
+</body>
+</html>
