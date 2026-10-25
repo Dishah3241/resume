@@ -23,21 +23,21 @@
 
   <p><strong>Software Engineer — Agentic Evaluation &amp; AI Developer Tooling</strong></p>
 
-  <p>Software engineer with 5+ years at Intapp building backend services, data pipelines, and cloud infrastructure. Led the consolidation of 30 AWS microservices into 3 Azure AKS mini-monoliths and cut API response times from ~2 minutes to ~3 seconds with a caching layer. Now builds agentic evaluation tooling: drove adoption of his team's central eval platform — including its MCP server and connectors — across at least 4 teams, where it is becoming the standard for teams working with these systems. Outside work, directs AI-agent formalization projects in Lean 4 with machine-checked proofs, two of which are linked from Google DeepMind's formal-conjectures repository.</p>
+  <p>Software engineer with 5+ years at Intapp building backend services, data pipelines, and cloud infrastructure, now focused on agentic evaluation tooling — built an MCP server and connectors for a central eval platform and drove its adoption across at least 4 teams. Previously led an AWS-to-Azure consolidation of 30 microservices into 3 AKS mini-monoliths. Independently, directs AI-agent formalization projects in Lean 4; two are linked from Google DeepMind's formal-conjectures repository.</p>
 
   <h2>Experience</h2>
   <div class="item">
     <strong>Software Engineer, Intapp</strong> — Palo Alto, CA<br>
     <span class="dates">August 2021 - Present</span> | Cloud-based SaaS platform for professional services firms (legal, accounting, finance)
     <ul>
-      <li>Build agentic evaluation pipelines at Intapp; drove adoption of the team's central eval tooling across at least 4 other teams that had been running disjointed, uncoordinated eval work — ran discovery with each team, demoed the platform and its connectors, and onboarded them onto its MCP server, which he built originally for his core team's use; the tooling is becoming the standard for teams working with these systems.</li>
+      <li>Build agentic evaluation pipelines; drove adoption of the team's central eval tooling across at least 4 other teams that had been running disjointed, uncoordinated eval work — ran discovery with each team, demoed the platform and its connectors, and onboarded them personally; the tooling is becoming the standard for teams working with these systems.</li>
+      <li>Built the platform's MCP server and connectors, originally for the core team's use; the MCP became the onboarding lever that made cross-team adoption practical.</li>
       <li>Helped implement standardized pathways for model updates and new-model evaluations, so teams can adopt the newest models through a consistent eval process.</li>
-      <li>Led migration from AWS microservices to Azure AKS, consolidating 30 microservices into 3 mini-monolith Docker images — reducing operational overhead and network latency across service boundaries.</li>
-      <li>Implemented a caching layer for mostly-static data, reducing API response times from ~2 minutes to ~3 seconds (~97% improvement) by eliminating redundant database round trips.</li>
-      <li>Proposed and executed architecture refinements to eliminate unnecessary network hops between services, reducing end-to-end update times from 30 seconds–several minutes to under 2 seconds.</li>
-      <li>Refactored database schema to remove redundant tables and simplify complex queries, improving query performance and long-term maintainability; designed and built an SMTP email delivery server from scratch using Node.js, enabling transactional and notification email workflows within the product.</li>
-      <li>Maintained, debugged, and enhanced data delivery pipelines surfacing backend data to frontend consumers — migrating from real-time Kafka in AWS to batch polling in Azure to reduce operational complexity; built monitoring dashboards in Grafana/Prometheus and automated test suites to ensure observability and reliability during and after the cloud migration.</li>
-      <li>Managed cloud infrastructure across AWS (Lambda, CloudFormation, Terraform) and Azure (AKS, Argo CD, Helm charts) via Jenkins CI/CD pipelines; designed and built CI/CD pipelines for PySpark data applications migrated from Databricks to AKS, enabling automated testing and deployment of data workflows.</li>
+      <li>Led migration from AWS microservices to Azure AKS, consolidating 30 microservices into 3 mini-monolith Docker images, reducing operational overhead and network latency across service boundaries.</li>
+      <li>Implemented a caching layer for mostly-static data, reducing API response times from ~2 minutes to ~3 seconds (~97%) by eliminating redundant database round trips.</li>
+      <li>Proposed and executed architecture refinements to eliminate unnecessary network hops, reducing end-to-end update times from 30 seconds–several minutes to under 2 seconds.</li>
+      <li>Also: refactored database schemas and simplified complex queries; built an SMTP email delivery server from scratch in Node.js; migrated data delivery pipelines from real-time Kafka (AWS) to batch polling (Azure), with Grafana/Prometheus dashboards and automated test suites through the migration.</li>
+      <li>Manage cloud infrastructure across AWS (Lambda, CloudFormation, Terraform) and Azure (AKS, Argo CD, Helm) via Jenkins CI/CD; built CI/CD pipelines for PySpark data applications migrated from Databricks to AKS.</li>
     </ul>
   </div>
 
@@ -47,14 +47,14 @@
     <span class="dates">Sep–Oct 2026</span> | Lean 4, Mathlib | github.com/Dishah3241
     <ul>
       <li>Directed AI coding agents (Claude, Grok, GPT via Codex, GLM) to formalize published results on the Erdős–Harary–Tutte dimension of graphs, building a reusable Lean 4 library (GraphDimension) and six proof repositories with no <code>sorry</code>, kernel- and NanoDa-comparator-checked proofs, axiom-audit CI, and leanblueprint documentation.</li>
-      <li>Formalized a known result — Chaffee &amp; Noble's dimension-five bound for Erdős problem 1007 (the least edge count of a dimension-five graph is 15, attained by K₆ and K₁,₃,₃) — and the dimension-four extremal case; both formalizations are linked as <code>formal_proof</code> references from Google DeepMind's formal-conjectures repository (PR #6511, merged Sep 23, 2026; PR #6623, merged Sep 27, 2026). The formalization is of a published proof, not a new mathematical result, and was written by AI agents under my direction, as disclosed in both PRs.</li>
+      <li>Formalized a known result — Chaffee &amp; Noble's dimension-five bound for Erdős problem 1007 — and the dimension-four extremal case; both formalizations are linked as <code>formal_proof</code> references from Google DeepMind's formal-conjectures repository (PR #6511, merged Sep 23, 2026; PR #6623, merged Sep 27, 2026). The formalization is of a published proof, not a new mathematical result, and was written by AI agents under my direction, as disclosed in both PRs.</li>
     </ul>
   </div>
   <div class="item">
     <strong>agent-stream — observability for headless coding agents</strong><br>
     <span class="dates">Oct 2026</span> | Bash, jq, Agent Client Protocol | github.com/Dishah3241/agent-stream
     <ul>
-      <li>Built tooling that renders, styles, and captures event streams from headless coding agents (Claude Code, Pi, Cursor, Grok, Codex, ACP agents) as narrated terminal output; every run leaves a complete on-disk record — raw events, stderr, rendered display, and a structured <code>state.json</code> other programs can read mid-run — plus a fleet watcher and a multi-machine board over SSH.</li>
+      <li>Tooling that renders and captures event streams from headless coding agents (Claude Code, Pi, Cursor, Grok, Codex, ACP agents) as narrated terminal output; every run leaves a complete on-disk record — raw events, stderr, rendered display, and a structured <code>state.json</code> other programs can read mid-run — plus a fleet watcher and a multi-machine board over SSH.</li>
     </ul>
   </div>
   <div class="item">
@@ -67,7 +67,7 @@
 
   <h2>Skills</h2>
   <p><strong>Languages:</strong> Python, TypeScript/JavaScript, Go, Lean 4</p>
-  <p><strong>Backend &amp; Data:</strong> Node.js, FastAPI, REST APIs, PySpark</p>
+  <p><strong>Backend &amp; Data:</strong> Node.js, FastAPI, REST APIs, PySpark, PostgreSQL</p>
   <p><strong>Cloud &amp; Infrastructure:</strong> Azure AKS, AWS, Kubernetes, Docker, Kafka</p>
   <p><strong>DevOps &amp; Observability:</strong> Jenkins, Argo CD, Helm, Terraform, CloudFormation, Grafana, Prometheus</p>
   <p><strong>AI Tooling:</strong> MCP, Claude Code, agent evals, multi-harness agent observability</p>
@@ -80,7 +80,6 @@
   <div class="item">
     <strong>University of Alabama at Birmingham</strong>, Birmingham, AL<br>
     Bachelor of Sciences in Biomedical Engineering, Minor: Computer Science, Chemistry — August 2018<br>
-    Presidential Scholarship, Dean's List, Honors College, BMES Travel Award, 1st Place Fall Undergraduate Research Expo<br>
     <span class="dates">First author, J. Clin. Med. (2020); 3 peer-reviewed papers (ACS Biomaterials Sci. &amp; Eng. 2017; Nano Convergence 2016).</span>
   </div>
 </body>
